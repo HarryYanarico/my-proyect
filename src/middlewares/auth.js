@@ -10,6 +10,6 @@ module.exports = (req, res, next) => {
         req.user = verified; // Añade los datos del usuario al request
         next();
     } catch (err) {
-        res.status(400).json({ error: "Token inválido o expirado" });
+        res.status(401).json({ error: "Token inválido o expirado" });
     }
 };

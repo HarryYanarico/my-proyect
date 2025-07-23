@@ -1,6 +1,6 @@
  
 const app = require('./src/app');
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 const host = process.env.DB_HOST;
 
 app.get('/', (req, res) => {
